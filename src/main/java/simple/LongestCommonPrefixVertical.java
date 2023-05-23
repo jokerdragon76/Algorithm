@@ -2,7 +2,7 @@ package simple;
 
 /**
  * @author jokerdragon
- *
+ * <p>
  * 最长公共前缀纵向比较
  */
 public class LongestCommonPrefixVertical {
@@ -21,10 +21,10 @@ public class LongestCommonPrefixVertical {
             for (int j = 1; j < count; j++) {
 
                 if (c != strs[j].charAt(i) || i == strs[j].length()) {
-                    return strs[0].substring(0,i);
+                    return strs[0].substring(0, i);
                 }
             }
         }
         return strs[0];
-        }
+    }
 }
